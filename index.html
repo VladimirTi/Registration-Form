@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registrations</title>
+	<script type="text/javascript" src='script.js'> </script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<form action="script.js" method="post" name="mainForm"> 
+		<!-- in this form we collect custom data and perfoms validation of this using HTML5 -->
+		
+		<p>First name: <br>
+			<input type="text" name="firstName" placeholder="Volodymyr" pattern=".*[^&quot &#39]"> </p>
+			<p id="firstName"></p>
+
+		<p>Second name: <br>
+			<input type="text" name="secondName" placeholder="Tyshchenko" pattern=".*[^&quot &#39]"> </p>
+			<p id="secondName"></p>
+
+		<p>Gender <br>  
+			<input type="radio" name="gender" value="male" checked>Male <br> 
+			<input type="radio" name="gender" value="female">Female</p>
+
+		<p>Birthday <br>
+			
+			<input type="date" name="birthday"></p>
+			<p id="birthday"></p>
+
+		<p>Country <br>
+			<select name=country>
+				<option value='ukraine'>Ukraine</option>
+				<option value='nonUkraine'>Non-Ukraine</option>
+			</select>
+		</p>
+
+		<p>Email <br>
+			<input type="email" name="email" placeholder="tyshenko.v.v@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></p>
+			<p id="email"></p>
+
+		<p>Password <br> 
+			<input type="password" name="password" placeholder="*******">
+		</p>
+		<p id="password"></p>
+
+		<p>Address: <br>
+			<input type="text" name="address" placeholder="Kharkiv" pattern=".*[^&quot &#39]">
+		</p>
+		<p id="address"></p>
+
+		<p>Notes: <br>
+			<textarea name='notes' pattern=".*[^&quot &#39]"></textarea>
+		</p>
+		
+		<input type="button" value="ОК" onClick="dataField(this.form)">
+		<input type="reset" value="Очистить">
+		
+	</form>
+</body>
+</html>
