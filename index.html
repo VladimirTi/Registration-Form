@@ -10,11 +10,11 @@
 		<!-- in this form we collect custom data and perfoms validation of this using HTML5 -->
 		
 		<p>First name: <br>
-			<input type="text" name="firstName" placeholder="Volodymyr" pattern=".*[^&quot &#39]"> </p>
+			<input type="text" name="firstName" placeholder="Volodymyr" pattern="[^&quot &#39]*"> </p>
 			<p id="firstName"></p>
 
 		<p>Second name: <br>
-			<input type="text" name="secondName" placeholder="Tyshchenko" pattern=".*[^&quot &#39]"> </p>
+			<input type="text" name="secondName" placeholder="Tyshchenko" pattern="[^&quot &#39]*"> </p>
 			<p id="secondName"></p>
 
 		<p>Gender <br>  
@@ -43,12 +43,12 @@
 		<p id="password"></p>
 
 		<p>Address: <br>
-			<input type="text" name="address" placeholder="Kharkiv" pattern=".*[^&quot &#39]">
+			<input type="text" name="address" placeholder="Kharkiv" pattern="[^&quot &#39]*">
 		</p>
 		<p id="address"></p>
 
 		<p>Notes: <br>
-			<textarea name='notes' pattern=".*[^&quot &#39]"></textarea>
+			<textarea name='notes' pattern="[^&quot &#39]*"></textarea>
 		</p>
 		
 		<input type="button" value="ОК" onClick="dataField(this.form)">
